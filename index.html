@@ -3,9 +3,10 @@
         <title>Abstract Demo</title>
         <script type="text/javascript" src="abstractengine/setup.js"></script>
         <script type="text/javascript">
+            setup.dependencies.push("demo.js");
             function main() {
                 var canvas = document.getElementById("canvas");
-                var engine = new Engine(canvas);
+                var engine = new Demo(canvas);
                 engine.start();
             }
         </script>
